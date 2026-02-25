@@ -21,7 +21,6 @@ Version  Developer        Date     Change
 
 #define MAXSTR  256
 
-FILE *fstatus = NULL;
 char input_file  [MAXSTR];
 char output_file [MAXSTR];
 
