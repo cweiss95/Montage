@@ -1,3 +1,3 @@
 #include "montage.h"
 
-File *fstatus = null;
+File *fstatus = NULL;
