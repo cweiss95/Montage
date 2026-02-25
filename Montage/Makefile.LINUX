@@ -110,8 +110,8 @@ mBgExecMPI.o:	mBgExec.c
 mBgModel:	mBgModel.o debugCheck.o 
 		$(CC) -o mBgModel mBgModel.o debugCheck.o $(LIBS)
 
-mConvert:	mConvert.o debugCheck.o checkHdr.o checkWCS.o
-		$(CC) -o mConvert mConvert.o debugCheck.o checkHdr.o \
+mConvert:	mConvert.o debugCheck.o checkHdr.o checkWCS.o globals.o
+		$(CC) -o mConvert mConvert.o debugCheck.o checkHdr.o globals.o \
 		checkWCS.o $(LIBS)
 
 mCoverageCheck:	mCoverageCheck.o checkHdr.o checkWCS.o checkFile.o
@@ -151,8 +151,8 @@ mFitExecMPI.o:	mFitExec.c
 mFitplane:	mFitplane.o debugCheck.o
 		$(CC) -o mFitplane mFitplane.o debugCheck.o $(LIBS)
 
-mFlattenExec:	mFlattenExec.o filePath.o
-		$(CC) -o mFlattenExec mFlattenExec.o filePath.o $(LIBS)
+mFlattenExec:	mFlattenExec.o filePath.o globals.o
+		$(CC) -o mFlattenExec mFlattenExec.o filePath.o globals.o $(LIBS)
 
 mGetHdr:	mGetHdr.o checkFile.o checkHdr.o checkWCS.o
 		$(CC) -o mGetHdr checkFile.o mGetHdr.o checkHdr.o checkWCS.o \
